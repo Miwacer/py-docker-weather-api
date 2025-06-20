@@ -17,7 +17,7 @@ def get_weather() -> None:
     response = requests.get(url, params=params)
 
     temp = response.json()["current"]["temp_c"]
-    return temp
+    print(temp)
 
 if __name__ == "__main__":
     get_weather()
